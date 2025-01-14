@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additive Game v1.0 Scoreboard</title>
+    <link rel="stylesheet" href="../css/pages/scoreboard.css">
+    <link rel="stylesheet" href="../css/responsive/scoreboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Orbitron&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../assets/sounds/scoreboardPgS.mp3" preload="auto" loop></audio>
+    <audio id="optionSound" src="../assets/sounds/option click.mp3" preload="auto"></audio>
+    <div id="scoreboard">
+        <div id="subContainer">
+            <div id="gameOver">Game &nbsp;Over</div>
+            <div id="scoreMsg">Your &nbsp;Final &nbsp;Score &nbsp;Is</div>
+            <div id="score"></div>
+            <button id="playAgain" onclick="location.href = 'main.html'"><div id="replayButton"></div>&nbsp;Play&nbsp;Again</button>
+            <button id="mainMenu" onclick="location.href = '../index.html'">Main&nbsp;Menu</button>
+        </div>
+    </div>
+    <script type="module" src="../scripts/scoreboard.js"></script>
+</body>
+</html>

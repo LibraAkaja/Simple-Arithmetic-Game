@@ -1,0 +1,129 @@
+@media only screen and (max-width: 1024px) {
+    #gameBox{
+        height: 57.5vh;
+        width: 56vw;
+    }
+    #subContainer{
+        height: 52.5vh;
+        width: 52.5vw;
+    }
+    #lifeBar{
+        right: 12%;
+    }
+    #timeUp{
+        left: 26%;
+    }
+    .smallCircle{
+        font-size: 200%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #gameBox{
+        height: 60vh;
+    }
+    #subContainer{
+        height: 91.5%;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    #timeUp{
+        left: 16%;
+    }
+    #lifeBar{
+        top: 26%;
+        width: 6vw;
+        right: 10%;
+    }
+    #timebarContainer{
+        left: 1%;
+    }
+    #n1{
+        position: relative;
+        right: 15%;
+        top: 7%;
+    }
+    #n2{
+        position: relative;
+        left: 15%;
+        top: -19%;
+    }
+    #operators{
+        position: relative;
+        bottom: 5%;
+    }
+    #equals{
+        position: relative;
+        bottom: 13%;
+    }
+    #options{
+        position: relative;
+        bottom: 10%;
+        height: 30vh;
+        aspect-ratio: 1;
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    body{
+        backdrop-filter: blur(1px);
+    }
+    #gameBox{
+        width: 70vw;
+    }
+    #subContainer{
+        width: 98%;
+        height: 98.5%;
+    }
+    #timeUp{
+        transform: scale(0.9);
+        left: 0%;
+    }
+    #lifeBar{
+        height: 4vh;
+        width: 10vw;
+        flex-direction: row;
+        border: none;
+        background: none;
+        top: 23%;
+        left: 46%;
+        z-index: 1;
+        gap: 40%;
+    }
+    #timebarContainer{
+        width: 75vw;
+        top: 6vh;
+        left: 0%;
+    }
+    #n1{
+        right: 20%;
+    }
+    #n2{
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #timeUp{
+        transform: scale(0.8);
+        width: 100vw;
+        left: -10%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #gameBox{
+        width: 80vw;
+    }
+    #lifeBar{
+        transform: scale(1.20);
+    }
+    #n1{
+        right: 23%;
+    }
+    #n2{
+        left: 23%;
+    }
+}

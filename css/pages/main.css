@@ -1,0 +1,175 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Spicy Rice", serif;
+}
+
+body{
+    background: url(../../assets/images/wbg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#timebarContainer{
+    height: 5vh;
+    width: 50vw;
+    border: 1px solid black;
+    border-radius: 25px;
+    position: relative;
+    top: 10vh;
+    overflow: hidden;
+    background: rgba(112, 109, 109,0.027);
+    backdrop-filter: blur(2px);
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#timeBar{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(79, 79, 79);
+    transition: width 0.1s linear;      /* Smoothens the visual time flow in timebar */
+}
+
+#lifeBar{
+    height: 60vh;
+    width: 4vw;
+    border: 1px solid antiquewhite;
+    border-radius: 20px;
+    background: rgba(112, 109, 109,0.027);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    top: 24%;
+    right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#gameBox{
+    height: 55vh;
+    width: 52.5vw;
+    transform: scale(1.15);
+    border: 2px solid rgb(190, 182, 182);
+    border-radius: 1%;
+    background-color: rgba(112, 109, 109,0.027);
+    backdrop-filter: blur(2px);
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subContainer{
+    background: url(../../assets/images/wbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+    width: 50vw;
+    border: 1px solid rgb(190, 182, 182);
+    border-radius: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#options{
+    height: 30vh;
+    width: 30vh;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.operator{
+    height: 10%;
+    aspect-ratio: 1;
+    color: antiquewhite;
+    font-size: 350%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+}
+
+.smallCircle{
+    border: 1px solid rgb(247, 235, 218);
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+    font-size: 250%;
+    color: rgb(255, 230, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(112, 109, 109,0.027);
+    backdrop-filter: blur(2px);
+    cursor: not-allowed;
+}
+
+.smallCircleForOption{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+    font-size: 200%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(112, 109, 109,0.027);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+
+.smallCircleForOption:hover{
+    background-color: rgb(71, 71, 71);
+    transform: scale(1.05);
+}
+
+.smallCircleForOption:active{
+    background-color: rgb(130, 130, 128);
+}
+
+#o1{
+    position: absolute;
+    left: 33%;
+    top: 3%;
+}
+
+#o2{
+    position: absolute;
+    left: 3%;
+    top: 33%;
+}
+
+#o3{
+    position: absolute;
+    right: 3%;
+    top: 33%;
+}
+
+#o4{
+    position: absolute;
+    bottom: 3%;
+    left: 33%;
+}
+
+#timeUp{
+    height: 10vh;
+    width: 100%;
+    font-size: 350%;
+    font-family: "Orbitron", serif;
+    z-index: -1;
+    position: absolute;
+    left: 33%;
+    cursor: none;
+}
+

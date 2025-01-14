@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1180px) {
+
+    body{
+        background: url(../../assets/images/wbgIphone.png) no-repeat;
+        background-size: 100%;
+        background-clip: content-box;
+    }
+
+    #subContainer{
+        background-size: cover;
+    }
+
+    #score{
+        font-weight: 400;
+    }
+    
+}

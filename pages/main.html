@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Game v1.0</title>
+    <link rel="stylesheet" href="../css/pages/main.css">
+    <link rel="stylesheet" href="../css/responsive/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Spicy+Rice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Orbitron&family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgm" src="../assets/sounds/mainPgS2.mp3" preload="auto" loop autoplay></audio>
+    <audio id="optionClk" src="../assets/sounds/option click.mp3" preload="auto"></audio>
+    <div id="timebarContainer">
+        <div id="timeBar"></div>
+    </div>
+    <div id="lifeBar">
+        <img id="l1" class="l" src="../assets/images/life.svg">
+        <img id="l2" class="l" src="../assets/images/life.svg">
+        <img id="l3" class="l" src="../assets/images/life.svg">
+        <img id="l4" class="l" src="../assets/images/life.svg">
+        <img id="l5" class="l" src="../assets/images/life.svg">
+    </div>
+    <div id="gameBox">
+        <div id="subContainer">
+            <div id="n1" class="smallCircle"></div>
+            <div id="operators" class="operator"></div>
+            <div id="n2"class="smallCircle"></div>
+            <div id="equals" class="operator">=</div>
+            <div id="timeUp">Time's Up</div>
+            <div id="options">
+                <div id="o1"class="smallCircleForOption"></div><div id="o2"class="smallCircleForOption"></div>
+                <div id="o3"class="smallCircleForOption"></div><div id="o4"class="smallCircleForOption"></div>    
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/main.js"></script>
+    <script type="module">
+        //Background music for the game
+        const soundStatus = sessionStorage.getItem('soundStatus');    //Getting the status of game sounds
+        window.addEventListener("load", function() {
+            const hovSound = document.getElementById("optionClk");      //Sound when user hovers over the options
+            const bgm = document.getElementById("bgm");
+            function optionSound() {
+                hovSound.play().catch(error => {
+                console.error("Error playing audio: ",error)
+                });    
+            }
+            if(soundStatus === '1') {
+                //Play the bgm
+                bgm.play().catch(error => {
+                console.error("Error playing audio: ",error);
+                });
+                //Add the sound to options for mouseenter event
+                document.getElementById("o1").addEventListener("mouseenter", optionSound);
+                document.getElementById("o2").addEventListener("mouseenter", optionSound);
+                document.getElementById("o3").addEventListener("mouseenter", optionSound);
+                document.getElementById("o4").addEventListener("mouseenter", optionSound);
+            }
+            else if(soundStatus === '0') {
+                //Don't play any sound
+                bgm.pause();     
+            }
+        });
+    </script>
+</body>
+</html>

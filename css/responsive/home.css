@@ -1,0 +1,181 @@
+/* @media only screen and (max-width: 2560px) {
+    body{
+        background: url(wbg4k.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    #mainContainer{
+        height: 75vh;
+        width: 72.5vw;
+        left: 48vw;
+        top: 30vh;
+    }
+    #subContainer{
+        height: 94%;
+        width: 96%;
+    }
+    #gameName{
+        transform: scale(1.75);
+    }
+    #headText{
+        transform: scale(1.5);
+    }
+    #gameName:hover,#headText:hover{
+        transform: scale(2);
+    }
+    #developer{
+        font-size: 250%;
+    }
+    #playButton{
+        border-radius: 50%;
+        transform: scale(1);
+        font-size: 250%;
+    }
+} */
+
+@media only screen and (max-width: 1024px) {
+    #mainContainer{
+        width: 56vw;
+        height: 57.5vh;
+    }
+    #subContainer{
+        height: 52.5vh;
+        width: 52.5vw;
+        gap: 6%;
+    }
+    #gameSoundOnOff{
+        left: 49vw;
+    }
+    #gameName:hover{
+        transform: scale(1.15);
+    }
+    #playButton:hover{
+        transform: scale(0.90);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mainContainer{
+        left: 23vw;
+        width: 60vw;
+        height: 60vh;
+    }
+    #subContainer{
+        width: 93%;
+        height: 91.5%;
+    }
+    #gameName{
+        transform: scale(0.85);
+    }
+    #gameName:hover{
+        transform: scale(1);
+    }
+    #headText{
+        height: 25%;
+        transform: scale(0.80);
+    }
+    #headText:hover{
+        transform: scale(0.95);
+    }
+    #gameSoundOnOff{
+        top: 3vh;
+        transform: scale(0.80);
+        left: 52vw;
+    }
+    #gameSoundOnOff:hover{
+        transform: scale(0.90);
+    }
+    #playButton:hover{
+        transform: scale(0.90);
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    body{
+        background: url(../../assets/images/wbgIphone.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    #gameSoundOnOff{
+        left: 65vw;
+        top: 0.5vh;
+    }
+    #mainContainer{
+        width: 75vw;
+        left: 12.5vw;
+        backdrop-filter: blur(5px);
+    }
+    #subContainer{
+        height: 99%;
+        width: 99%;
+        background: none;
+        gap: 4%;
+    }
+    #gameName{
+        background: linear-gradient(to right, antiquewhite,white,antiquewhite);
+        background-clip: text;
+        transform: scale(1);
+        z-index: 2;
+    }
+    #gameName:hover{
+        transform: scale(1.10);
+    }
+    #headText{
+        background: linear-gradient(to right, antiquewhite,white,antiquewhite);
+        background-clip: text;
+        transform: scale(0.90);
+        height: max-content;
+    }
+    #developer{
+        width: 18.5ch;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #mainContainer{
+        left: 13vw;
+    }
+    #subContainer{
+        background: none;
+    }
+    #gameName{
+        font-size: 180%;
+        z-index: 2;
+    }
+    #headText{
+        font-size: 175%;
+    }
+    #developer{
+        width: 50vw;
+    }
+    #gameSoundOnOff{
+        left: 64vw;
+    }
+    #playButton{
+        transform: scale(0.70);
+    }
+    #playButton:hover{
+        transform: scale(0.75);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #subContainer{
+        gap: 3%;
+    }
+    #gameSoundOnOff{
+        transform: scale(0.75);
+        top: 0vh;
+        left: 63vw;
+    }
+    #gameName{
+        transform: scale(0.90);
+    }
+    #gameName:hover{
+        transform: scale(0.95);
+    }
+    #headText{
+        transform: scale(0.90);
+    }
+    #headText:hover{
+        transform: scale(0.95);
+    }
+}
