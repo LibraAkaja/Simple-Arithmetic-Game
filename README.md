@@ -49,7 +49,7 @@ Simple-Arithmetic-Game/ <br>
 ## Acknowledgements
 - Icons by [Icon Finder](https://www.iconfinder.com/)
 - Sounds by [Pixabay](https://pixabay.com/)
-- The following images used in this project were AI generated
+- The images used in this project were AI generated
 
 ## 🤝 Contributing
 This project is currently **not open for contributions**. If you have any suggestions or feedback, feel free to open an issue.
